@@ -1,69 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gart.sh</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>gart.sh</title>
 
-    <script type="module" src="./index.ts" defer></script>
-  </head>
+		<link rel="stylesheet" href="./style.css" />
+		<script type="module" src="./index.ts" defer></script>
 
-  <style>
-    body {
-      background-color: black;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      color: white;
-    }
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-    canvas {
-      width: 100%;
-      height: 100%;
-    }
+	<style></style>
 
-    h1 {
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-      font-family: monospace;
-      font-size: 2rem;
-    }
-
-    noscript {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-family: monospace;
-      font-size: 2rem;
-    }
-
-    .controls {
-      position: absolute;
-      bottom: 1rem;
-      left: 50%;
-      transform: translateX(-50%);
-      font-family: monospace;
-      font-size: 1rem;
-    }
-
-    #debug {
-      position: absolute;
-      top: 5rem;
-      left: 1rem;
-      font-family: monospace;
-      font-size: 1rem;
-    }
-  </style>
-
-  <body>
-    <h1>gart.sh</h1>
-    <canvas id="main"></canvas>
-    <noscript>you need to enable javascript to view this site.</noscript>
-
-    <div class="controls"></div>
-
-    <div id="debug"></div>
-  </body>
+	<body>
+		<noscript>you need to enable javascript to view this site.</noscript>
+	</body>
 </html>

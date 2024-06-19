@@ -1,0 +1,31 @@
+body {
+	background-color: black;
+	margin: 2rem;
+	padding: 0;
+	overflow: hidden;
+	color: white;
+	font-family: "Roboto Mono", "Courier New", Courier, monospace;
+}
+
+#input {
+	color: white;
+	background-color: black;
+	border: none;
+	font-family: "Roboto Mono", "Courier New", Courier, monospace;
+	font-size: 1rem;
+	width: calc(100% - 10rem);
+
+	/* Remove default input styling */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+input:focus {
+	outline: none;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}

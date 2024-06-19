@@ -28,6 +28,7 @@ export default class AboutCommand extends Command {
             `<primary>TypeScript <blue>Lua <danger>PostgreSQL <purple>Valkey`,
             `<success>Express <primary>discord.js <yellow>MikroORM`,
             `<green>Node.js <white>git <orange>Linux <magenta>System Administration`,
+            `<n>`
         )
     }
 }

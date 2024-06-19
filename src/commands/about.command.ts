@@ -14,7 +14,7 @@ export default class AboutCommand extends Command {
         Terminal.log(
             `<bold>Hey, I'm <green>gart</><text>!</>`,
             `-----------------`,
-            `I'm a backend developer that enjoys making stupid shit.`,
+            `I'm a 21 year old backend developer from the midwest that enjoys making stupid shit.`,
             `Currently working at <a href="https://craftyourtown.com"><cyan>CraftYourTown</a>.`,
             `<n>`,
             `<bold>Links: `,
@@ -23,9 +23,11 @@ export default class AboutCommand extends Command {
             `<a href="https://twitter.com/gurrrrrrett3"><cyan>Twitter</a>`,
             `<a href="https://discord.com/users/@me/232510731067588608"><primary>Discord</a>`,
             `<a href="https://matrix.to/#/%40gart%3Ajpxs.io"><text>Matrix</a>`,
-
-            `<n>`
-
+            `<n>`,
+            `<bold>List of "skills" that won't get me hired:`,
+            `<primary>TypeScript <blue>Lua <danger>PostgreSQL <purple>Valkey`,
+            `<success>Express <primary>discord.js <yellow>MikroORM`,
+            `<green>Node.js <white>git <orange>Linux <magenta>System Administration`,
         )
     }
 }

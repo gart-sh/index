@@ -18,6 +18,7 @@ export default class AboutCommand extends Command {
             `Currently working at <a href="https://craftyourtown.com"><cyan>CraftYourTown</a>.`,
             `<n>`,
             `<bold>Links: `,
+            `<n>`,
             `<a href="https://github.com/gurrrrrrett3"><green>GitHub</a>`,
             `<a href="https://twitter.com/gurrrrrrett3"><cyan>Twitter</a>`,
             `<a href="https://discord.com/users/@me/232510731067588608"><primary>Discord</a>`,

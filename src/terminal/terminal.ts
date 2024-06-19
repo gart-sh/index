@@ -89,7 +89,6 @@ export default class Terminal {
         this.container.innerHTML = ""
         for (const line of this._lines) {
             const div = document.createElement("div")
-            div.className = "line"
             div.innerHTML = line == '<n>' ? '<br>' : ColorFormat.parse(line)
             this.container.appendChild(div)
         }

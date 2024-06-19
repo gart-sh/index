@@ -21,7 +21,7 @@ export default class Command {
         this.hidden = options.hidden || false
     }
 
-    public run(args: string[]): void {
+    public run(args: string[]): void | Promise<void> {
         throw new Error("Method not implemented.")
     }
 

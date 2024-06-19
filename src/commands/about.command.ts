@@ -27,7 +27,16 @@ export default class AboutCommand extends Command {
             `<bold>List of "skills" that won't get me hired:`,
             `<primary>TypeScript <blue>Lua <danger>PostgreSQL <purple>Valkey`,
             `<success>Express <primary>discord.js <yellow>MikroORM`,
-            `<green>Node.js <white>git <orange>Linux <magenta>System Administration`,
+            `<green>Node.js <grey>git <orange>Linux <magenta>System Administration`,
+            `<n>`,
+            `<bold>Projects I'm proud of and I think you should check out:`,
+            `<a href="https://github.com/gurrrrrrett3/gartbin"><green>gartbin</a> (<a href="https://bin.gart.sh"><cyan>seriously, check it out</a>)`,
+            `<a href="https://github.com/jpxs-intl/ctf-public"><primary>Capture the Flag</a>`,
+            `<a href="https://github.com/gart-sh/gateway"><cyan>gart.sh gateway</a> <white>(the backend for this site!)`,
+            `<n>`,
+            `<bold>Want to hire me? (always looking for work)`,
+            `<text>Send me an email at <a href="mailto:gart@gart.sh"><cyan>gart@gart.sh</a>`,
+            `Discord works too if that's more your thing. <a href="https://discord.com/users/@me/232510731067588608"><primary>@gart</a>`,
             `<n>`
         )
     }

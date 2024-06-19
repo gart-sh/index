@@ -83,6 +83,9 @@ export default class Terminal {
     public static add(...lines: string[]): void {
         this._lines.push(...lines)
         this.render()
+
+        this.container.scrollTop = this.container.scrollHeight
+        window.scrollTo(0, document.body.scrollHeight)
     }
 
     public static render(): void {

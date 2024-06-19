@@ -15,7 +15,7 @@ export default class AboutCommand extends Command {
             `<bold>Hey, I'm <green>gart</><text>!</>`,
             `-----------------`,
             `I'm a 21 year old backend developer from the midwest that enjoys making stupid shit.`,
-            `Currently working @ <a href="https://gart.sh/l/cyt"><cyan>CraftYourTown</a>.`,
+            `Currently working at <a href="https://gart.sh/l/cyt"><cyan>CraftYourTown</a>.`,
             `<n>`,
             `<bold>Links: `,
             `<n>`,

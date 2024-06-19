@@ -66,11 +66,6 @@ export default class Terminal {
             this.input.focus()
         })
 
-
-        window.addEventListener("click", () => {
-            this.input.focus()
-        })
-
         inputContainer.appendChild(this.input)
 
         registerCommands()

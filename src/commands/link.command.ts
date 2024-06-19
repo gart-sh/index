@@ -25,6 +25,6 @@ export default class LinkCommand extends Command {
 
         const id = data.id
 
-        Terminal.log(`Link created: ${window.location.origin}/l/${id}`)
+        Terminal.log(`Link created: <a href="/l/${id}"><cyan>${window.location.origin}/l/${id}</></a>`)
     }
 }

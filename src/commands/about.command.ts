@@ -18,7 +18,6 @@ export default class AboutCommand extends Command {
             `Currently working at <a href="https://gart.sh/l/cyt" target="_blank"><cyan>CraftYourTown</a>.`,
             `<n>`,
             `<bold>Links: `,
-            `<n>`,
             `<a href="https://gart.sh/l/github" target="_blank"><green>GitHub</a>`,
             `<a href="https://gart.sh/l/twitter" target="_blank"><cyan>Twitter</a>`,
             `<a href="https://gart.sh/l/discord" target="_blank"><primary>Discord</a>`,

@@ -2,16 +2,16 @@ import Terminal from "../terminal"
 import Command from "./command"
 
 export default class CommandManager {
-    public static commands: Map<string, Command> = new Map()
+    public static commands: Command[] = []
 
     public static registerCommands(...commands: Command[]): void {
         for (const command of commands) {
-            this.commands.set(command.name, command)
+            this.commands.push(command)
         }
     }
 
     public static executeCommand(name: string, args: string[]): void {
-        const command = this.commands.get(name)
+        const command = this.getCommand(name)
         if (command) {
             try {
                 command.run(args)
@@ -27,13 +27,16 @@ export default class CommandManager {
                         console.error("An error occurred while executing the command")
                         console.error(error)
                         break
-
                 }
             }
 
         } else {
             Terminal.error(`Command not found: ${name}`)
         }
+    }
+
+    public static getCommand(name: string): Command | undefined {
+        return this.commands.find(command => command.name === name || command.aliases.includes(name))
     }
 
     public static parseCommand(input: string): void {

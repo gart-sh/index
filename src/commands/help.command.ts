@@ -29,7 +29,7 @@ export default class HelpCommand extends Command {
     }
 
     private showCommandHelp(commandName: string): void {
-        const command = CommandManager.commands.get(commandName)
+        const command = CommandManager.getCommand(commandName)
         if (command) {
             Terminal.log(
                 `<bold>${command.name}</bold>`,

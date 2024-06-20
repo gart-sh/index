@@ -24,7 +24,7 @@ export default class AboutCommand extends Command {
             `<a href="https://gart.sh/l/matrix" target="_blank"><text>Matrix</a>`,
             `<n>`,
             `<bold>Skills:`,
-            `<primary>TypeScript <blue>Lua <danger>Java <magenta>Kotlin`,
+            `<primary>TypeScript <yellow>JavaScript <blue>Lua <danger>Java <magenta>Kotlin`,
             `<success>Express <primary>discord.js <yellow>MikroORM <danger>PostgreSQL <purple>Valkey`,
             `<green>Node.js <grey>git <orange>Linux <magenta>System Administration`,
             `<n>`,

@@ -6,7 +6,7 @@
 		<title>gart.sh</title>
 
 		<link rel="stylesheet" href="./style.css" />
-		<script type="module" src="./index.ts" defer></script>
+		<script type="module" src="./script/index.ts" defer></script>
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,11 +14,68 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
 			rel="stylesheet"
 		/>
-	</head>
 
-	<style></style>
+		<meta name="description" content="gart.sh - backend/application developer, linux/open source enthusiast, VRChat enjoyer" />
+		<meta name="keywords" content="gart.sh, gart, backend, application, developer, linux, open source, VRChat" />
+		<meta name="author" content="gart" />
+
+		<meta property="og:title" content="gart.sh" />
+		<meta property="og:description" content="gart.sh - backend/application developer, linux/open source enthusiast, VRChat enjoyer" />
+	</head>
 
 	<body>
 		<noscript>you need to enable javascript to view this site.</noscript>
+
+		<div class="header">
+			<h1>gart.sh</h1>
+			<p>
+				backend/application developer, linux/open source enthusiast, VRChat enjoyer
+			</p>
+			<p class="note">
+				21 • she/any 
+			</p>
+
+			<div class="header-links">
+				<a href="https://gart.sh/l/github" target="_blank">
+					<img height="32" width="32" src="https://cdn.simpleicons.org/github/fff" alt="github" />
+				</a>
+				<a href="https://gart.sh/l/twitter" target="_blank">
+					<img height="32" width="32" src="assets/twitter.svg" alt="twitter" />
+				</a>
+				<a href="https://gart.sh/l/discord" target="_blank">
+					<img height="32" width="32" src="https://cdn.simpleicons.org/discord/fff" alt="discord" />
+				</a>
+				<a href="https://gart.sh/l/matrix" target="_blank">
+					<img height="32" width="32" src="https://cdn.simpleicons.org/matrix/fff" alt="matrix" />
+				</a>
+				<a href="mailto:contact@gart.sh" target="_blank">
+					<img height="32" width="32" src="assets/mail.svg" alt="email" />
+				</a>
+					
+			</div>
+
+		</div>
+
+		<div class="content">
+
+			<h2>projects</h2>
+			<p>here are some of the projects i've worked on or am proud of</p>
+			<p class="note">note: a lot of projects aren't included due to NDAs</p>
+		</div>
+
+		<div id="project-list" class="project-list">
+			<div id="project-template" class="project" hidden>
+				<div class="project-timestamp"></div>
+				<div class="project-header">
+					<h2 class="project-title"> </h2>
+					<p class="project-description"></p>
+				</div>
+				<div class="project-footer">
+					<div class="project-links"></div>
+					<div class="project-langs"></div>
+				</div>					
+			</div>
+		</div>
+
 	</body>
 </html>

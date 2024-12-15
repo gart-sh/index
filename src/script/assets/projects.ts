@@ -88,7 +88,7 @@ export const projects: Project[] = [
         links: [
             {
                 name: 'GitHub',
-                url: 'https://github.com/gurrrrrrett3/wakatime-exporter'
+                url: 'https://github.com/jpxs-intl/jpxs-plugin'
             }
         ]
     },

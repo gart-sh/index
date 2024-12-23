@@ -69,12 +69,12 @@ button {
 }
 
 .header .header-links a img {
-	width: 1.5rem;
-	height: 1.5rem;
+	width: 2rem;
+	height: 2rem;
 }
 
 .header .header-links a:hover {
-	transform: scale(1.1);
+	transform: scale(1.25);
 }
 
 .header .header-links a:last-child {

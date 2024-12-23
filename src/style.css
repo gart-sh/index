@@ -90,14 +90,14 @@ button {
 	font-size: 0.8rem;
 }
 
-.project-list {
+.card-list {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 	gap: 1rem;
 	padding: 1rem;
 }
 
-.project {
+.card {
 	color: var(---fg0);
 	background-color: var(---bg1);
 	padding: 1rem;
@@ -123,56 +123,55 @@ button {
 	}
 }
 
-.project:hover {
+.card:hover {
 	background-color: var(---bg2);
 	box-shadow: 10px 10px 12px var(---a0);
 	transform: translate(-5px, -5px);
 }
 
-.project h2 {
+.card h2 {
 	font-size: 1.5rem;
 	margin-bottom: 0.5rem;
 }
 
-.project p {
+.card p {
 	font-size: 1rem;
 }
 
-.project .project-timestamp {
+.card .card-timestamp {
 	font-size: 0.8rem;
 	color: var(---fg2);
 	margin-top: 0.5rem;
 }
 
-.project .project-footer {
+.card .card-footer {
 	display: grid;
 	grid-template-columns: 1fr auto;
 	margin-top: 1rem;
 }
 
-.project .project-footer a {
-	text-align: left
+.card .card-footer a {
+	text-align: left;
 }
 
-.project .project-links {
+.card .card-links {
 	display: flex;
 }
 
-.project .project-links a {
+.card .card-links a {
 	margin-right: 0.5rem;
 }
 
-.project .project-langs {
+.card .card-langs {
 	display: flex;
 	width: 100%;
 	flex-wrap: wrap;
 	align-items: center;
 }
 
-.project .project-langs img {
+.card .card-langs img {
 	width: 1.5rem;
 	height: 1.5rem;
 	margin-right: 0.5rem;
 	border-radius: 3px;
 }
-

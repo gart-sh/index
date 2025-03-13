@@ -1,5 +1,6 @@
 import { projects, Project } from "./assets/projects"
 import { languages } from "./assets/languages"
+import './particles'
 
 const projctListElement = document.getElementById('project-list')! as HTMLDivElement
 const projectTemplateElement = document.getElementById('card-template')! as HTMLTemplateElement
@@ -21,27 +22,36 @@ function addProject(project: Project, index: number) {
     nameElement.textContent = project.name
     descriptionElement.textContent = project.description
 
-    project.links.forEach(link => {
-        const newLink = document.createElement('a')
-        newLink.className = 'card-link'
-        newLink.setAttribute('href', link.url)
-        newLink.setAttribute('target', '_blank')
-        newLink.setAttribute('rel', 'noopener noreferrer')
+    if (project.links.length > 0) {
+        project.links.forEach(link => {
+            const newLink = document.createElement('a')
+            newLink.className = 'card-link'
+            newLink.setAttribute('href', link.url)
+            newLink.setAttribute('target', '_blank')
+            newLink.setAttribute('rel', 'noopener noreferrer')
 
-        const buttonElement = document.createElement('button')
-        buttonElement.textContent = link.name
+            const buttonElement = document.createElement('button')
+            buttonElement.textContent = link.name
 
-        newLink.appendChild(buttonElement)
-        linkElement.appendChild(newLink)
-    })
+            newLink.appendChild(buttonElement)
+            linkElement.appendChild(newLink)
+        })
+    } else {
+        const note = document.createElement('p')
+        note.textContent = 'No links available. :/'
+        note.className = 'note'
+        linkElement.appendChild(note)
+    }
 
     project.languages.forEach(langName => {
         const lang = languages[langName]
 
         const langElement = document.createElement('img')
         langElement.setAttribute('src', `https://cdn.simpleicons.org/${lang.icon}`)
+        langElement.setAttribute('alt', lang.name)
         languageElement.appendChild(langElement)
     })
+
 
     newProject.removeAttribute('hidden')
     newProject.removeAttribute('id')

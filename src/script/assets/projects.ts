@@ -3,6 +3,14 @@ import { Language } from "./languages";
 
 export const projects: Project[] = [
     {
+        id: 'watchtower',
+        name: 'watchtower',
+        description: 'Massive moderation backend for Starfall, handles chat logs, tickets, moderation actions, and a lot more. Frontend is built with SSR TSX and htmx. Built off of gateway.',
+        languages: ['ts', 'htmx', 'luau', 'css'],
+        date: '2025-01-13',
+        links: []
+    },
+    {
         id: 'gartsh',
         name: 'gart.sh',
         description: 'Personal website and portfolio, uses no libraries or frameworks.',
@@ -178,7 +186,19 @@ export const projects: Project[] = [
             }
         ]
     },
-
+    {
+        id: 'onebot',
+        name: 'Onebot',
+        description: 'Mini bot framework that handles loading commands and splits code into manageable modules. All of my Discord bots are built off of this.',
+        languages: ['ts'],
+        date: '2023-1-26',
+        links: [
+            {
+                name: 'GitHub',
+                url: 'https://github.com/OnebotTeam/OnebotCore'
+            }
+        ]
+    },
 ]
 
 export interface Project {

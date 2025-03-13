@@ -15,6 +15,10 @@ export const languages = {
         name: 'CSS',
         icon: 'css3'
     },
+    htmx: {
+        name: 'htmx',
+        icon: 'htmx'
+    },
     java: {
         name: 'Java',
         icon: 'java'
@@ -29,7 +33,7 @@ export const languages = {
     },
     luau: {
         name: 'Luau',
-        icon: 'lua'
+        icon: 'roblox/ffffff'
     },
     json: {
         name: 'JSON',

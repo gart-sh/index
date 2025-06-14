@@ -3,8 +3,8 @@ import { Language } from "./languages";
 
 export const projects: Project[] = [
     {
-        id: 'watchtower',
-        name: 'watchtower',
+        id: 'sentinel',
+        name: 'sentinel',
         description: 'Massive moderation backend for Starfall, handles chat logs, tickets, moderation actions, and a lot more. Frontend is built with SSR TSX and htmx. Built off of gateway.',
         languages: ['ts', 'htmx', 'luau', 'css'],
         date: '2025-01-13',

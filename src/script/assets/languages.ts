@@ -13,7 +13,7 @@ export const languages = {
     },
     css: {
         name: 'CSS',
-        icon: 'css3'
+        icon: 'css'
     },
     htmx: {
         name: 'htmx',

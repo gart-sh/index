@@ -1,6 +1,7 @@
+import './modes'
+import './particles'
 import { projects, Project } from "./assets/projects"
 import { languages } from "./assets/languages"
-import './particles'
 
 const projctListElement = document.getElementById('project-list')! as HTMLDivElement
 const projectTemplateElement = document.getElementById('card-template')! as HTMLTemplateElement
@@ -62,3 +63,12 @@ function addProject(project: Project, index: number) {
 }
 
 projectTemplateElement.remove()
+
+// update age in description
+document.addEventListener("DOMContentLoaded", () => {
+    const el = document.getElementById("desc2")
+    const orig = el!.textContent.replace(/\d{2}/g, "$")
+    setInterval(() => {
+        el!.textContent = orig.replace("$", ((Date.now() - 1040803200000) / 31556925974).toFixed(10))
+    }, 100)
+})

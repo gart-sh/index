@@ -1,3 +1,5 @@
+import Theme from "./theme";
+
 const canvas = document.getElementById('background') as HTMLCanvasElement;
 const ctx = canvas.getContext('2d')!;
 
@@ -111,8 +113,8 @@ function update() {
         }
 
         ctx.beginPath();
-        ctx.arc(particle.x, particle.y, 2, 0, Math.PI * 2);
-        ctx.fillStyle = calculateGradient('#ffffff33', '#60d15eff', clamp(1 - distance / maxDistance, 0, 1));
+        ctx.arc(particle.x, particle.y, 4, 0, Math.PI * 2);
+        ctx.fillStyle = calculateGradient('#ffffff33', Theme.colors.a0, clamp(1 - distance / maxDistance, 0, 1));
         ctx.fill();
     });
 
